@@ -8,21 +8,21 @@
 var Graph = function(options)
 {
 	var default_args = {
-		'id'	:	"graph",
-		'interval'	:	300,
-		'showline' :	true,
-		'showfill' :	true,
-		'lineWidth' :	2,
-		'strokeStyle' :	"#666",
-		'gridcolor' : "#EEE",
-		'background' : "#F9F9F9",
-		'fillStyle' :	"rgba(0,0,0,0.25)",
-		'showdots' :	true,
-		'showgrid' : true,
-		'showlabels' : true,
-		'grid' : [10,10],
-		'range' : [0,100],
-		'call' :	function(){return Math.floor(Math.random()*100) + 50;}
+		'id': "graph",
+		'interval':	300,
+		'showline':	true,
+		'showfill':	true,
+		'lineWidth':	2,
+		'strokeStyle':	"#666",
+		'gridcolor': "#EEE",
+		'background': "#F9F9F9",
+		'fillStyle':	"rgba(0,0,0,0.25)",
+		'showdots':	true,
+		'showgrid': true,
+		'showlabels': true,
+		'grid': [10,10],
+		'range': [0,100],
+		'call': function(){return Math.floor(Math.random()*100) + 50;}
 	}
 	for(var index in default_args) {
 		if(typeof options[index] == "undefined")
@@ -102,7 +102,6 @@ var Graph = function(options)
 			
 		value = Math.round((this.range[1] - call ) * this.scale);
 
-		
 		this.array.push(value);
 		
 		if(options['debug'])
