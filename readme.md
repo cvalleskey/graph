@@ -24,6 +24,7 @@ Usage
 		});
 	}
 	</script>
+	<canvas id="firstgraph" width="620" height="150"></canvas>
 	
 
 Customization
